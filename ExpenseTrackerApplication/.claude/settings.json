@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__sqlite-readonly__list_tables",
+      "mcp__sqlite-readonly__describe_table",
+      "mcp__sqlite-readonly__list_foreign_keys",
+      "mcp__sqlite-readonly__read_query"
+    ],
+    "deny": [
+      "mcp__sqlite-readonly__*"
+    ]
+  }
+}

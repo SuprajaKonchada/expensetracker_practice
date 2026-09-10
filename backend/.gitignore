@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+expense_tracker.db
+.pytest_cache/
+.env
+venv/

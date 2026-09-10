@@ -1,0 +1,22 @@
+# Architecture Standards
+
+- The application must use React for the frontend.
+- The application must use Python for the backend.
+- SQLite must be used for persistent application data.
+- Keep frontend, backend, and database responsibilities clearly separated.
+- The React frontend must communicate with the Python backend through APIs.
+- Do not access SQLite directly from React.
+- Backend API/controller functions should remain small and focused.
+- Business logic must be placed in service/business modules.
+- Database operations must be isolated in a dedicated data-access/repository layer where applicable.
+- API/controller code must not contain complex business logic.
+- Business/service code must not depend directly on frontend code.
+- Database-specific logic should remain within the data-access layer.
+- Reuse existing architectural patterns before introducing new ones.
+- Do not introduce unnecessary frameworks, libraries, or architectural layers.
+- New features must follow the existing project architecture.
+- Keep responsibilities separated so that changes in one layer do not unnecessarily affect other layers.
+- Shared utilities should be placed in appropriate reusable modules.
+- Configuration must remain separate from application business logic.
+- Environment-specific configuration must not be hard-coded.
+- New architectural patterns require a clear justification.

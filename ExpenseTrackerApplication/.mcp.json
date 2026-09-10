@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "sqlite-readonly": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp==2.1.1",
+        "python",
+        "${CLAUDE_PROJECT_DIR:-.}/mcp-servers/sqlite-readonly/server.py"
+      ],
+      "env": {
+        "SQLITE_DB_PATH": "${CLAUDE_PROJECT_DIR:-.}/backend/expense_tracker.db"
+      }
+    }
+  }
+}
