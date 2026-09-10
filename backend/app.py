@@ -34,7 +34,7 @@ def create_app(db_path=None):
 
     @app.get("/api/health")
     def health():
-        return {"status": "ok"}
+        return {"status": "ok", "message": "Expense Tracker API is up and running."}
 
     @app.errorhandler(sqlite3.Error)
     def handle_database_error(err):
